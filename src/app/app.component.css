@@ -1,0 +1,24 @@
+header{
+  justify-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.matdrawer-container {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #555;
+}

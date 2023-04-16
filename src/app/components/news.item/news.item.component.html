@@ -1,0 +1,19 @@
+<mat-grid-list cols="1" rowHeight="10:2">
+  <mat-grid-tile *ngFor="let section of sub_sections$ | async">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{section.title}}</mat-card-title>
+          <mat-card-subtitle>{{section.byline}}</mat-card-subtitle>
+          <img alt="noticias" mat-card-sm-image src={{section.multimedia[2].url}}  >
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{section.abstract}}
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="openDialog(section)" mat-button>VIEW</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

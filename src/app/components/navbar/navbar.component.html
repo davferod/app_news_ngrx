@@ -1,0 +1,7 @@
+<mat-toolbar>
+  <mat-action-list *ngFor="let section of sub_sections$ | async">
+    <button mat-list-item (click)="loadSectionNews(section)">
+      {{section}}
+    </button>
+  </mat-action-list>
+</mat-toolbar>

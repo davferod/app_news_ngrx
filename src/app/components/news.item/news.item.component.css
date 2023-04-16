@@ -1,0 +1,15 @@
+mat-grid-tile {
+  background: dimgray;
+
+}
+
+.example-card {
+  width: 95%;
+  margin-bottom: 8px;
+}
+
+.example-viewport {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}

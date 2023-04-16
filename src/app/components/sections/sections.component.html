@@ -1,0 +1,5 @@
+<mat-action-list *ngFor="let section of sections$  | async">
+    <button mat-list-item (click)="loadSectionNewsBySection(section.section)">
+      <strong>{{section.display_name}}</strong>
+    </button>
+</mat-action-list>
